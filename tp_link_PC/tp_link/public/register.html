@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP-LINK商城</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="shortcut icon" href="img/header/tp.jpg" type="image/x-icon">
+</head>
+<body>
+    
+    <div id='header'></div>
+    <!-- 注册成功提示框 -->
+    <div class='account_register'>
+        <table></table>
+        <div id='register'>
+            <div class="register_title">TP-LINK会员注册</div>
+            <div data-title='username'>
+                <input type="text" placeholder="用户名">
+                <p class='d_none'>请输入6~8用户名 可含字母和数字 不能包含特殊符号</p>
+            </div>
+            <div data-title='phone'>
+                <input type="text" placeholder="手机号">
+                <p class='d_none'>请输入手机号</p>
+            </div>
+            <div data-title='password'>
+                <input type="password" placeholder="密码">
+                <p class='d_none'>请输入6~8位密码,至少包含一个大写字母，至少包含一个小写字母，至少包含一个数字，不能里面有特殊符号</p>
+            </div>
+            <div data-title='msg_password'>
+                <input type="password" placeholder="确认密码">
+                <p class='d_none'>请再次确认密码</p>
+            </div>
+            <div>
+                <button id="btn">立即注册</button>
+            </div>
+            <div class='login_agree'>
+             <a href="login.html">立即登录</a>
+            </div>
+            <div id='hint'class='d_none'>
+                <p></p>
+                <p>是否前往登录页</p>
+                <p><button>是</button><button>否</button></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/register.js"></script>
+</html>

@@ -1,0 +1,125 @@
+.product_search_sort{
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(241, 238, 238);
+    color: gray;
+}
+.product_search_sort::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.active{
+    background:#0096FF !important;
+    color: #fff;
+}
+.disabled{
+    background: rgb(221, 217, 217) !important;
+}
+.product_search_sort>li{
+    padding: 10px 15px;
+    float: left;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+[data-title='search']{
+    width: 1200px;
+    margin: 0 auto;
+    perspective:200px;
+}
+[data-title='search']::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+[data-title='search']>div{
+    width: 294px;
+    height: 400px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    background: #fff;
+    transition:transform 0.5s linear;
+    float: left;
+    margin-left:7px;
+    border-radius: 5px;
+}
+[data-title='search']>:nth-child(5n),[data-title='search']>:first-child{
+    margin-left: 0 !important;
+}
+[data-title='search']>div:hover{
+    box-shadow:0px 0px 10px 3px rgb(212, 211, 211);
+    transform:translateZ(5px)
+}
+[data-title='search']>div+div+div+div+div{
+    margin-top:15px;
+}
+[data-title='search']>div>a>img{
+    width: 200px;
+    height: 200px;
+    margin: 32px 0px;
+    transition: transform 0.5s linear;
+}
+[data-title='search']>div>a>img:hover{
+    transform:scale(1.1);
+}
+[data-title='search']>div>a{
+    color: gray;
+}
+[data-title='search'] .price{
+    color: red;
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+[data-title='search'] .title{
+    color: #333;
+    font-size: 16px;
+    margin: 20px 0px;
+    height: 50px;
+    font-weight: bold;
+}
+[data-title='search']>div>a>:last-child{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    height: 38px;
+}
+
+[data-title='page']{
+    width: 1200px;
+    height: 75px;
+    margin: 0 auto;
+    cursor: pointer;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+[data-title='page']>button,[data-title='page']>ul{
+    outline:0;
+    border: 0;
+    padding: 10px 20px;
+    float: left;
+}
+[data-title='page']>ul>li,[data-title='page']>button{
+    float: left;
+    padding: 10px 15px;
+    height: 35px;
+    border-radius: 5px;
+    background: rgb(190, 188, 188);
+    cursor: pointer;
+}
+[data-title='page']>ul>li+li{
+    margin-left: 10px;
+}
+.d_none{
+    display: none;
+}
+[data-title=hint]{
+    font-size: 75px;
+    font-weight: bolder;
+    color: grey;
+    width: 100% !important;
+}

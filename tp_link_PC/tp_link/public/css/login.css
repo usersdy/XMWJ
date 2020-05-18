@@ -1,0 +1,115 @@
+#login_header{
+    width: 1500px;
+    margin: 0 auto;
+    height:75px;
+    background:url('../img/header/logo.png') no-repeat center center;
+    border-bottom:1px solid rgb(226, 209, 209)
+}
+.account_login{
+    width: 1500px;
+    margin: 0 auto;
+    height:1000px;
+    background-image: url('../img/login/logo.png');
+}
+#login{
+    width: 600px;
+    background-color: #fff;
+    margin: 80px auto;
+    padding: 10px 75px;
+    box-sizing: border-box;
+    position: relative;
+}
+#login_title{
+    padding-top: 40px;
+    font-size: 24px;
+    color: #0096FF;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 700;
+} 
+#login>div{
+    margin-bottom: 25px;
+}
+
+#login>div>input{
+    outline: 0;
+    border: 0;
+    background: #fff;
+    color:#0096FF ;
+    border-bottom:1px solid rgb(245, 240, 240);
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+button{
+    font-size: 18px;
+    color: #FFF;
+    text-align: center;
+    line-height: 48px;
+    font-weight: 700;
+    width:100%;
+    background-color: #0096FF;
+    border-radius:8px;
+    cursor: pointer;
+    outline: 0;
+    margin: 25px 0px 70px 0px;
+}
+.login_change{
+    margin-bottom: 75px;
+    height: 35px;
+}
+.login_change a{
+    color:#0096FF ;
+}
+/* 注册成功提示框 */
+#hint,#failed{
+    width: 260px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 15px;
+    border:2px  solid gray ;
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform:translate(-130px,-125px) ;
+    text-align: center;
+    color: #0096FF;
+}
+#hint>:first-child{
+    margin: 80px 0px  25px 0px ;
+    font-size:24px;
+}
+#hint>:nth-child(2){
+    color: gray;
+}
+#hint>:last-child{
+    /* display: flex;
+    justify-content: space-around; */
+    margin-top:15px ;
+}
+#hint>:last-child>button{
+    width: 75px;
+    height: 35px;
+    line-height: 35px;
+    outline:0;
+    border:0;
+    border-radius: 7px;
+    font-weight: bold;
+}
+#hint>:last-child>button:hover{
+    transform: scale(1.1);
+}
+#failed{
+    height: 250px;
+    line-height:250px;
+    font-size: 24px;
+    opacity: 0;
+    color:red;
+    overflow: hidden;
+}
+.d_none{
+    display: none;
+}
+.disabled{
+    background: rgba(192, 185, 185, 0.295) !important;
+}

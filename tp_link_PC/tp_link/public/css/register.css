@@ -1,0 +1,121 @@
+.d_none{
+    display: none;
+}
+/* 提示框默认状态 */
+p{
+    font-size: 12px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+/* 禁用状态 */
+.disabled{
+    background: rgba(192, 185, 185, 0.295) !important;
+}
+/* 验证成功状态 */
+.success{
+    color:green;
+}
+.failed{
+    color: red;
+}
+#header{
+    width: 1500px;
+    margin: 0 auto;
+    height:75px;
+    background:url('../img/header/logo.png') no-repeat center center;
+     border-bottom:1px solid rgb(226, 209, 209)
+}
+.account_register{
+    width: 1500px;
+    margin: 0 auto;
+    height:1000px;
+    background-image: url('../img/login/logo.png');
+
+}
+#register{
+        width: 600px;
+        background-color: #fff;
+        margin: 80px auto;
+        padding: 10px 75px;
+        box-sizing: border-box;
+        position: relative;
+}
+.register_title{
+    padding-top: 40px;
+    font-size: 24px;
+    color: #0096FF;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+#register>div{
+    margin-bottom: 15px;
+}
+#register>div>input{
+    outline: 0;
+    border: 0;
+    background: #fff;
+    color:#0096FF ;
+    border-bottom:1px solid rgb(245, 240, 240);
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+#register button{
+    font-size: 18px;
+    color: #FFF;
+    text-align: center;
+    line-height: 48px;
+    font-weight: 700;
+    width:100%;
+    background-color: #0096FF;
+    border-radius:8px;
+    cursor: pointer;
+    outline: 0;
+    margin: 25px 0px;
+}
+.login_agree{
+    margin-bottom: 75px;
+    height: 35px;
+}
+.login_agree>a{
+    color:#0096FF ;
+}
+/* 注册成功提示框 */
+#hint{
+    width: 260px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 15px;
+    border:2px  solid gray ;
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform:translate(-130px,-125px) ;
+    text-align: center;
+    color: #0096FF;
+}
+#hint>:first-child{
+    margin: 80px 0px  25px 0px ;
+    font-size:24px;
+}
+#hint>:nth-child(2){
+    color: gray;
+}
+#hint>:last-child{
+    display: flex;
+    justify-content: space-around;
+    margin-top:15px ;
+}
+#hint>:last-child>button{
+    width: 75px;
+    height: 35px;
+    line-height: 35px;
+    outline:0;
+    border:0;
+    border-radius: 7px;
+    font-weight: bold;
+}
+#hint>:last-child>button:hover{
+    transform: scale(1.1);
+}

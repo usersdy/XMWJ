@@ -1,0 +1,204 @@
+.header_top {
+    width:1200px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333;
+    margin: 0 auto;
+    cursor: pointer;
+    color:rgb(177, 169, 169);
+    font-weight: bold;
+    position: relative;
+}
+.header_top a{
+    color:rgb(177, 169, 169);
+}
+.header_top a:hover{
+    color:#fff;
+}
+.header_top>div{
+    float: left;
+}
+.header_top>ul:nth-child(2){
+    float: right;
+    margin-right:210px ;
+}
+.header_top>div{
+    margin-left: 100px;
+}
+.header_top>ul:nth-child(2)>li{
+    float: left;
+}
+.header_top>ul:nth-child(2)>li+li{
+    width:60px;
+    display: flex;
+    justify-content: space-around;
+}
+.header_top>ul:nth-child(2)>li:last-child{
+    width: 85px;
+}
+#car_product{
+    width: 200px;
+    height:40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    overflow: hidden;
+    z-index: 100;
+    transition: height 0.5s linear;
+    background: #fff;
+}
+.product{
+    overflow:auto;
+    width:200px;
+    height:160px;
+}
+.product>li>a{
+    color: black !important;
+}
+#car_product .img{
+    width: 70px;
+    height: 50px;
+}
+.product::-webkit-scrollbar {
+    width:1px; 
+}
+#car_product>:first-child{
+    background:#333 ;
+}
+#car_product>:first-child:hover{
+    background: #0096FF;
+}
+#car_product:hover{
+    height:190px;
+}
+/* 网页头部导航 */
+.header_nav{
+    width:1200px;
+    height: 80px;
+    background-color: #FFF;
+    border-bottom: 1px solid #E6E6E6;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.04);
+    box-sizing: border-box;
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background: url("../img/header/logo.png") no-repeat 8% 50%;
+}
+.header_nav>ul:first-child{
+    height: 80px;
+    line-height: 80px;
+    width:850px;
+    float: left;
+    margin-left:340px;
+}
+.header_nav>ul:first-child>li{
+    float: left;
+    cursor: pointer;
+    color: #000;
+    width:150px;
+    text-align: center;
+}
+.header_nav>ul:first-child>li:hover{
+    color: #0096FF;
+    background:#fff;
+    border-radius: 5px;
+}
+.header_nav>:nth-child(2){
+    width:250px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+} 
+ .header_nav>:nth-child(2)>input{
+    width: 250px;
+    height: 45px;
+    float: left;
+    padding: 5px 10px;
+} 
+.header_nav>:nth-child(2)>:last-child{
+    position: absolute;
+    width:25px;
+    height: 25px;
+    left:210px;
+    cursor: pointer;
+}
+[data-product='show']{
+    width: 1200px;
+    margin: 0 auto;
+}
+#domestic,#commercial,#defend{
+    padding:8px 8px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 100;
+    width: 1200px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    padding:10px 200px;
+}
+#domestic>div,#commercial>div,#defend>div{
+    width: 255px;
+    float: left;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#domestic img,#commercial img,#defend img{
+     height:100px;
+    transition:transform 1s linear;
+}
+#domestic img:hover,#commercial img:hover,#defend img:hover{
+    transform:scale(1.2);
+}
+ .show_title{
+    font-size: 14px;
+    margin-top:5px
+}
+ .show_detail{
+    margin: 5px 0px 5px 0px;
+    margin: 5px 0px;
+}
+ .show_price{
+    color:red;
+    margin: 5px 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+/*  显示出来*/
+.d_none{
+    display: none !important
+}
+#domestic a,#commercial a,#defend a{
+     padding:10px 8px;
+     background:#0096FF; 
+     border-radius: 5px;
+     color: #fff;
+     display: block;
+     font-size: 16px;
+}
+#domestic a:hover,#commercial a:hover,#defend a:hover{
+    background:rgb(0, 119, 255) ;
+}
+
+/* 注销提示框 */
+.hint{
+    width: 260px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 15px;
+    border:2px  solid gray ;
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform:translate(-130px,-125px) ;
+    text-align: center;
+    color: #0096FF;
+    z-index: 999;
+    line-height: 250px;
+    font-size: 24px;
+    opacity: 0;
+}

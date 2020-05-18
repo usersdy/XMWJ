@@ -1,0 +1,126 @@
+#main,.shopping_car_menu_fee,.shopping_car_menu,.shopping_car_menu_title{
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#main{
+    margin-top: 50px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+}
+#main input{
+    vertical-align: middle;
+}
+.shopping_car_process{
+    height: 60px;
+    border-bottom: 1px solid #E6E6E6;
+    line-height: 60px;
+    font-size: 18px;
+}
+.shopping_car_process>li{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.car_active{
+    border-bottom: 1px solid #0096FF;
+}
+.shopping_car_menu_title{
+    height: 75px;
+    line-height: 75px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #E6E6E6 ;
+}
+.shopping_car_product>li>a{
+    color: #333;
+}
+.shopping_car_product>li>a:hover{
+    color: red;
+}
+.shopping_car_menu_title>li{
+    float: left;
+}
+.shopping_car_menu_title>li:first-child,.shopping_car_product>li:first-child{
+    width: 200px;
+}
+.shopping_car_menu_title>li:nth-child(2),.shopping_car_product>li:nth-child(2){
+    width: 460px;
+}
+.shopping_car_menu_title>li:nth-child(3),.shopping_car_product>li:nth-child(3){
+
+    width: 132px;
+}
+.shopping_car_menu_title>li:nth-child(4),.shopping_car_product>li:nth-child(4){
+    width: 222px;
+}
+.shopping_car_menu_title>li:nth-child(5),.shopping_car_product>li:nth-child(5){
+    width: 150px;
+}
+.shopping_car_menu_title>li:last-child,.shopping_car_product>li:last-child{
+    width: 36px;
+}
+.shopping_car_product{
+    height: 120px;
+    line-height: 120px;
+    border-bottom: 1px solid #E6E6E6 ;
+    box-sizing: border-box;
+}
+.shopping_car_product>li:nth-child(3),.shopping_car_product>li:nth-child(5){
+    color: red;
+}
+.shopping_car_product>li{
+    float: left;
+    text-overflow:ellipsis;
+    height: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.shopping_car_product img{
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+}
+.shopping_car_product>li>.InpWidth,.shopping_car_product>li>button{
+    width: 45px;
+    height: 40px;
+    border: 1px solid #E6E6E6;
+    background: #fff;
+    display: block;
+    text-align: center;
+}
+.show_car_menu_fee{
+    border-bottom: 1px solid #E6E6E6;
+    margin: 10px 0px;
+}
+.show-car_menu_fee>:first-child{
+    text-align: left;
+}
+.show_car_menu_fee>:first-child>span{
+    color: #0096FF;
+}
+.show_car_menu_fee>:last-child{
+    text-align: right;
+    font-size: 18px !important;
+}
+.show_car_menu_fee>:last-child>span{
+    color: red;
+}
+.shopping_car_menu>:last-child{
+    text-align: right;
+}
+.shopping_car_menu>:last-child>button{
+    font-size: 16px;
+    color: #FFF;
+    line-height: 48px;
+    text-align: center;
+    background-color: red;
+    width: 160px;
+    height: 48px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}

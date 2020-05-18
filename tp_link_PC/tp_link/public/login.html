@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP-LINK商城</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="shortcut icon" href="img/header/tp.jpg" type="image/x-icon">
+</head>
+<body>
+    <div id='login_header'></div>
+    <div class='account_login'>
+        <table></table>
+        <div id='login'>
+            <div id="login_title">TP-LINK会员登录</div>
+            <div data-title='username'>
+                <input type="text" placeholder="请输入用户名">
+            </div>
+            <div data-title='password'>
+                <input type="password" placeholder="请输入密码">
+            </div>
+            <button id='btn'>立即登录</button>
+            <div class='login_change'>
+               <a href="register.html">立即注册</a></span>
+            </div>
+            <div id='failed' class="d_none">
+                用户名或密码错误
+            </div>
+            <div id='hint' class="d_none">
+                <p>登陆成功</p>
+                <p>请您点击确认前往首页</p>
+                <p><button>确认</button></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/login.js"></script>
+</html>

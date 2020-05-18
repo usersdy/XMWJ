@@ -1,0 +1,201 @@
+[data-title='banner']{
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.banner_list{
+    width:4800px;
+    height: 500px;
+    transition:margin-left 0.8s linear ;
+}
+.banner_item{
+    float: left;
+    width:1200px;
+    height: 500px;
+}
+.banner_guide{
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    z-index: 98;
+    transform:translateX(-36px);
+}
+.banner_guide>li{
+    box-sizing: border-box;
+    float: left;
+    margin-right: 8px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #d8d8d8;
+    border-radius: 100%;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.active{
+    background: #000 !important;
+}
+[data-title='banner']>span{
+    height: 100px;
+    width: 70px;
+    display: block;
+    transform:translateY(-50px);
+    opacity:0;
+    transition:opacity 0.5s linear;
+    border-radius: 5%;
+    border: 1px solid rgba(24, 22, 22, 0.568);
+    box-shadow: 0px 0px 5px 5px rgb(230, 227, 227) inset ;
+}
+.canSee{
+    opacity:1 !important;
+}
+.icon_left{
+    position: absolute;
+    top:50%;
+    left:25px;
+    background: url("../img/product/banner/icon_left.png") no-repeat center center;
+}
+.icon_right{
+    position: absolute;
+    top:50%;
+    right: 25px;
+    background: url("../img/product/banner/icon_right.png") no-repeat center center;
+}
+
+
+/* 右侧导航 */
+.slider_bar{
+    position: fixed;
+    right: 50px;
+    top: 160px;
+    margin-left: 600px;
+    width: 45px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    color: #fff;
+}
+.slider_bar>li {
+    font-size: 15px;
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgb(168, 166, 166);
+}
+
+.current{
+    background-color: #fff !important;
+    color:#0096FF;
+}
+
+/* 商品css */
+#domestic_F,#commercial_F,#defend_F{
+    width: 1200px;
+    margin:0px auto;
+    box-sizing: border-box;
+    position: relative;
+    perspective:200px;
+}
+#domestic_F>:nth-child(2)>img,#commercial_F>:nth-child(2)>img,#defend_F>:nth-child(2)>img{
+    width: 100%;
+}
+.product_title{
+    width: 100%;
+    height: 100px;
+}
+.title_detail{
+    float: left;
+    font-size: 26px;
+    margin-top:40px ;
+}
+.product_nav{
+    float: right;
+    margin-top:65px;
+}
+.product_nav>li{
+    float: left; 
+}
+.product_nav>li>a{
+    text-decoration: none;
+    color:gray ;
+    font-size: 14px;
+}
+.product_nav>li>a:hover{
+    color:#0096FF; 
+}
+.product_nav>li>span{
+    margin:0 12px;
+}
+.product_nav::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#domestic_F>div:last-child,#commercial_F>div:last-child,#defend_F>div:last-child{
+    margin-top: 15px;
+    width: 100%;
+    height: 560px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#domestic_F>:last-child>div,#commercial_F>:last-child>div,#defend_F>:last-child>div{
+    background: #fff;
+    width:290px;
+    height:275px;
+    float: left;
+    padding: 10px ;
+    border-radius: 5px;
+    transition:transform 0.5s linear;
+}
+#domestic_F>:last-child>div:hover,#commercial_F>:last-child>div:hover,#defend_F>:last-child>div:hover{
+    box-shadow: 0px 0px 10px 3px rgb(212, 211, 211);
+    transform:translateZ(2px);
+}
+/*  */
+#domestic_F>:last-child>div img,#commercial_F>:last-child>div img,#defend_F>:last-child>div img{
+    width: 40%;
+    transition:transform 1s linear ;
+}
+#domestic_F>:last-child>div img:hover,#commercial_F>:last-child>div img:hover,#defend_F>:last-child>div img:hover{
+    transform:scale(1.1);
+}
+#domestic_F>:last-child>div+div,#commercial_F>:last-child>div+div,#defend_F>:last-child>div+div{
+    margin-left: 12px;
+}
+#domestic_F>:last-child>div:nth-child(5),#commercial_F>:last-child>div:nth-child(5),#defend_F>:last-child>div:nth-child(5){
+    margin-left: 0;
+}
+#domestic_F>:last-child>div+div+div+div+div,#commercial_F>:last-child>div+div+div+div+div,#defend_F>:last-child>div+div+div+div+div{
+    margin-top: 10px;
+}
+
+.p_title{
+    color: #333;
+    font-size: 16px;
+    margin-top: 10px;
+    height: 35px;
+}
+.p_detalis{
+    color: rgb(107, 105, 105);
+    font-size: 14px;
+    margin: 17px 0px;
+    height: 45px;
+}
+.p_price{
+    font-size: 16px;
+    color: red; 
+}
+.go_more>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    color:  rgb(107, 105, 105);
+    font-size: 24px;
+    font-weight: bold;
+}
